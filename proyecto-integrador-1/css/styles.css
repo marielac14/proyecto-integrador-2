@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2? family=Lato&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    background-color: #fbfbfb;
+    color: #0f0f0f;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    height: 90px;
+    width: 100%;
+    background-color: #fbfbfb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: #242424;
+    box-shadow: 0px 2px 5px grey;
+}
+
+.logo {
+    width: 120px;
+}
+
+ul#menu {
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+    
+}
+
+#contac-links {
+    list-style: none;
+}
+
+li.menu-item a{
+    text-decoration: none;
+    color: inherit;
+    padding: 16px;
+    display: inline-block;
+}
+
+li.menu-item:hover {
+    background-color: rgba(175, 89, 158, 0.3)
+    transition background-color 0.3s;
+}
+
+.container {
+    max-width: 1064px;
+    margin: 0 auto;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+}
+
+#foto-presentacion {
+    width: 190px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+
+h2 {
+    font-size: 28px;
+}
+
+.descripcion {
+    margin: 20px 0;
+    padding: 20px 0px;
+    display: flex;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2 p {
+    background-color: rgba(175, 89, 158, 0.3)s;
+}
+
+#boton-cv {
+    font-size: 17px;
+    background: #af599e;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: #fbfbfb;
+    background: rgba(175, 89, 158, 0.8);
+    transition: background-color 0.3s;
+    margin-top: 75%;
+}
+
+.content {
+    text-align: center;
+    padding: 10px;
+    background: rgba(175, 89, 158, 0.3);
+    border-radius: 5px;
+    height: min-content;
+}
+
+figure #iconos {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    width: 60px;
+    margin-top: 75%;
+}
+
+.social {
+    width: 150px;
+    padding: 20px;
+    margin: 16px;
+}
+
+.social-2 {
+    width: 150px;
+    padding: 20px;
+    margin: 16px;
+    }
+
+.social-3 {
+    width: 150px;
+    padding: 20px;
+    margin: 16px;
+}
+
+#contact-links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+
+img#iconos:hover {
+    background: rgba(175, 89, 158, 0.3);
+    scroll-behavior: smooth;
+}
+
+footer {
+    background-color: #af599e;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    color: #fbfbfb;
+}
+
+#inicio {
+    flex-direction: column;
+}
+
+article.presentacion {
+    width: 100%;
+}
+
+.presentacion2 {
+    width: 100%;
+}
+.icon-menu {
+    background: url(../../boton-hamburguesa.png) no-repeat; width: 9px; height: 6px;
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 48px;
+        text-align: left;
+    }
+    h2 {
+        font-size: 32px;
+    }
+
+    section#inicio {
+        flex-direction: row;
+    }
+    article.presentacion {
+        width: 50%;
+    }
+    #contact-links li {
+        margin: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    #foto-presentacion {
+        margin-right: 0;
+    }
+    #inicio {
+        margin-top: 100px;
+    }
+    .descripcion {
+        padding: 20px;
+    }
+    #boton-cv {
+        margin-left: 20px;
+    }
+
+}
+
