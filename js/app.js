@@ -1,8 +1,17 @@
 const menuItems = document.querySelectorAll('.menu-item');
-const menuBtn   = document.querySelector('#menu-button');
+const menuButton   = document.querySelector('#menu-button');
+const closeMenu = document.querySelector('.close-menu');
+const openMenu = document.querySelector('.open-menu');
 
-menuBtn.addEventListener('click', function() {
+menuButton.addEventListener('click', function() {
     document.body.classList.toggle('mobile-menu-active')
+    openMenu.style.display = 'none';
+    if (closeMenu.classList.contains('open')) {
+        closeMenu.classList.remove('open')
+        openMenu.style.display = 'block';
+    } else {
+        closeMenu.classList.add('open') 
+    }
 });
 
 menuItems.forEach(function(item) {
